@@ -69,7 +69,7 @@
   width: 100%;
   max-width: 800px;
   text-align: center;
-  margin: 220px auto auto;
+  margin: 20vh auto auto;
 }
 
 .intro .content h1 {
@@ -117,7 +117,7 @@
   max-width: 1010px;
   justify-content: space-between;
   margin: auto;
-  padding: 95px 0 0;
+  padding: 9vh 0 0;
   display: flex;
 }
 
@@ -144,7 +144,7 @@
 }
 
 .fun-fact .content h1 {
-  margin-top: 220px;
+  margin-top: 20vh;
 }
 
 .fun-fact .content p {
@@ -212,15 +212,16 @@
   height: 110vh;
   width: 100%;
   background-color: #fff;
+  align-items: center;
+  display: flex;
 }
 
 .analytics .content {
-  max-width: 720px;
+  max-width: 568px;
   flex-direction: column;
-  gap: 48px;
+  gap: 4.4vh;
   display: flex;
   position: relative;
-  top: 188px;
   left: 50%;
 }
 
@@ -291,15 +292,16 @@
 .how {
   height: 110vh;
   background-color: #f3fdfe;
-  padding-top: 140px;
-  padding-left: 375px;
+  align-items: center;
+  padding-left: 20vw;
+  display: flex;
 }
 
 .how .content {
-  width: 100%;
+  width: 45vw;
   max-width: 710px;
   flex-direction: column;
-  gap: 64px;
+  gap: 6vh;
   display: flex;
 }
 
@@ -352,7 +354,7 @@
   width: 116px;
   height: 116px;
   border-radius: 28px;
-  margin: 24px;
+  margin: 0 1.25vw;
 }
 
 .how .content .content__block .rectangle1 {
@@ -368,7 +370,7 @@
 }
 
 .how .content .indent {
-  margin-left: 174px;
+  margin-left: 9vw;
 }
 
 .pricing {
@@ -380,7 +382,7 @@
   text-align: center;
   width: 100%;
   max-width: 970px;
-  margin: 140px auto auto;
+  margin: 13vh auto auto;
 }
 
 .pricing .content .title {
@@ -395,7 +397,7 @@
 .pricing .content .subtitle {
   opacity: .8;
   color: #404040;
-  margin-top: 20px;
+  margin-top: 1.9vh;
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -405,7 +407,7 @@
 .pricing .content .blocks {
   justify-content: center;
   gap: 30px;
-  margin-top: 64px;
+  margin-top: 5.9vh;
   display: flex;
 }
 
@@ -418,27 +420,27 @@
 }
 
 .pricing .content .blocks .block .title {
-  margin-top: 64px;
+  margin-top: 5.9vh;
 }
 
 .pricing .content .blocks .block .subtitle:first-of-type {
-  margin-top: 56px;
+  margin-top: 5.2vh;
 }
 
 .pricing .content .blocks .block .subtitle:nth-of-type(2) {
-  margin-top: 20px;
+  margin-top: 1.9vh;
 }
 
 .pricing .content .blocks .block .price {
-  margin-top: 64px;
+  margin-top: 5.9vh;
 }
 
 .pricing .content .blocks .block .start {
   width: 240px;
   height: 76px;
   border-radius: 40px;
-  margin-top: 64px;
-  margin-bottom: 48px;
+  margin-top: 5.9vh;
+  margin-bottom: 4.4vh;
 }
 
 .pricing .content .blocks .block1 .title {
@@ -563,7 +565,7 @@
   width: 300px;
   justify-content: center;
   align-items: center;
-  margin: 49px auto auto;
+  margin: 4.5vh auto auto;
   display: flex;
 }
 
@@ -629,7 +631,7 @@
   height: 90vh;
   width: 100%;
   background-color: #f8fefe;
-  padding-top: 248px;
+  padding-top: 23vh;
 }
 
 .see .content {
