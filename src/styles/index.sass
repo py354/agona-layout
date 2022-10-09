@@ -1,0 +1,582 @@
+*, :before, :after
+	box-sizing: border-box
+
+
+.red_btn
+	border-radius: 34px
+	background-color: #FF553E
+	color: white
+
+@mixin font($family, $size, $weight, $line-height, $opacity: 1, $color: black)
+	font-family: $family, sans-serif
+	font-size: $size
+	font-weight: $weight
+	opacity: $opacity
+	line-height: $line-height
+	color: $color
+
+.title_48
+	font-family: 'Poppins', sans-serif
+	font-size: 48px
+	font-weight: 600
+
+.subtitle_18
+	font-family: 'Inter', sans-serif
+	font-size: 18px
+	font-weight: 400
+	opacity: 0.8
+	line-height: 36px
+
+.intro
+	height: 100vh
+	background-color: #FFF8F2
+
+	font-family: 'Poppins', sans-serif
+	font-size: 18px
+	font-weight: 400
+	padding: 40px
+
+	.header
+		width: 100%
+		max-width: 1160px
+		margin: auto
+
+		display: flex
+		justify-content: space-between
+		gap: 120px
+		align-items: center
+
+		nav
+			display: flex
+			gap: 48px
+
+		&__logo
+			height: 40px
+
+		&__buttons
+			display: flex
+			gap: 40px
+			font-weight: 500
+
+			&__auth--btn
+				color: #FF553E
+
+			&__login--btn
+				height: 60px
+				width: 133px
+
+
+	.content
+		width: 100%
+		max-width: 800px
+		text-align: center
+		margin: 220px auto auto
+
+		h1
+			font-family: 'Poppins', sans-serif
+			font-size: 64px
+			font-weight: 700
+			line-height: 90px
+
+		p
+			max-width: 595px
+			margin: 24px auto auto
+
+
+			font-family: 'Inter', sans-serif
+			font-size: 20px
+			font-weight: 400
+			line-height: 36px
+			color: #40201E
+			opacity: 0.8
+
+	.start
+		width: 100%
+		text-align: center
+		margin-top: 68px
+
+		.start__btn
+			margin: 0 auto
+			height: 74px
+			width: 240px
+
+
+.fun-fact
+	height: 100vh
+	background: #FFF8F2 url("../assets/fun_fact_background.svg") no-repeat
+	background-size: cover
+
+	.expertises:after
+		content: ""
+		width: 90px
+
+	.expertises
+		width: 100%
+		max-width: 1010px
+		margin: auto
+		padding: 95px 0 0 0
+		display: flex
+		justify-content: space-between
+
+		&__item__title
+			text-align: center
+			font-family: 'Popins', sans-serif
+			font-weight: 600
+			font-size: 48px
+			color: #18063C
+
+		&__item__desc
+			margin-top: 10px
+			text-align: center
+			font-family: 'Inter', sans-serif
+			font-weight: 400
+			font-size: 18px
+			opacity: 0.6
+
+	.content
+		text-align: center
+		margin: auto
+
+		h1
+			margin-top: 220px
+
+		p
+			margin: 20px auto
+			max-width: 660px
+
+	.fun-fact__blocks
+		width: 100%
+		max-width: 1170px
+		margin: 64px auto auto
+		display: flex
+		justify-content: space-between
+		gap: 32px
+
+		.fun-fact__block
+			//width: 100%
+			width: 369px
+			border-width: 0
+			border-radius: 48px
+			padding: 24px
+
+			.title
+				@include font('Popins', 28px, 600, 100%, 1, white)
+				margin: 24px 0 10px
+
+			.subtitle
+				@include font('Inter', 18px, 400, 26px, 0.8, white)
+				margin: 0
+
+			.rounded_rectangle
+				width: 88px
+				height: 88px
+				border-radius: 24px
+				background: rgba(255, 255, 255, 0.5)
+				box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06)
+
+		.fun-fact__block1
+			background-color: #70D0DC
+
+		.fun-fact__block2
+			background-color: #7562E0
+
+		.fun-fact__block3
+			background-color: #FA865F
+
+
+.analytics
+	height: 110vh
+	background-color: #ffffff
+	width: 100%
+
+
+	.content
+		position: relative
+		display: flex
+		flex-direction: column
+		gap: 48px
+		left: 50%
+		top: 188px
+		max-width: 720px
+		.title
+			@include font('Popins', 48px, 600, 68px, 1, #18063C)
+		.subtitle
+			margin-top: 20px
+			@include font('Inter', 18px, 400, 36px, 0.8, #404040)
+
+		.content__block
+			display: flex
+			align-items: center
+
+			.title
+				@include font('Popins', 28px, 600, 36px, 1, #404040)
+				margin: 0
+			.subtitle
+				max-width: 300px
+				margin: 0
+				@include font('Inter', 18px, 400, 36px, 0.8, #404040)
+
+			.rectangle
+				width: 88px
+				height: 88px
+				border-radius: 20px
+				margin: 24px
+
+			.rectangle1
+				background-color: #FA855C
+			.rectangle2
+				background-color: #7AD6E1
+			.rectangle3
+				background-color: #FFC954
+
+
+.how
+	height: 110vh
+	background-color: #F3FDFE
+	padding-top: 140px
+	padding-left: 375px
+
+	.content
+		width: 100%
+		max-width: 710px
+
+		display: flex
+		flex-direction: column
+		gap: 64px
+
+		.title
+			@include font('Popins', 48px, 600, 70px, 1, #18063C)
+
+		.subtitle
+			@include font('Inter', 18px, 400, 36px, 0.8, #404040)
+
+		.content__block
+			display: flex
+			align-items: center
+
+			.article
+				max-width: 300px
+
+			.title
+				@include font('Popins', 28px, 600, 52px, 1, #404040)
+			.subtitle
+				@include font('Inter', 18px, 400, 36px, 0.8, #404040)
+
+			.rectangle
+				width: 116px
+				height: 116px
+				border-radius: 28px
+				margin: 24px
+
+			.rectangle1
+				background-color: #5BC17F
+			.rectangle2
+				background-color: #FE6292
+			.rectangle3
+				background-color: #6B72FF
+
+		.indent
+			margin-left: 174px
+
+.pricing
+	height: 110vh
+	background-color: #FFFFFF
+
+	.content
+		margin: 140px auto auto
+		text-align: center
+		width: 100%
+		max-width: 970px
+
+		.title
+			@include font('Popins', 48px, 600, 70px, 1, #18063C)
+		.subtitle
+			margin-top: 20px
+			@include font('Inter', 18px, 400, 36px, 0.8, #404040)
+
+		.blocks
+			display: flex
+			justify-content: center
+			margin-top: 64px
+			gap: 30px
+
+			.block
+				width: 100%
+				max-width: 470px
+				border-radius: 110px
+				border: 1px solid #FF553E
+				text-align: center
+				.title
+					margin-top: 64px
+				.subtitle:first-of-type
+					margin-top: 56px
+				.subtitle:nth-of-type(2)
+					margin-top: 20px
+				.price
+					margin-top: 64px
+
+
+				.start
+					margin-top: 64px
+					margin-bottom: 48px
+
+					width: 240px
+					height: 76px
+					border-radius: 40px
+
+			.block1
+				.title
+					@include font('Inter', 48px, 600, 100%, 1, #404040)
+				.subtitle
+					@include font('Inter', 28px, 600, 52px, 0.8, #FF553E)
+
+				.dollar
+					vertical-align: top
+					@include font('Inter', 18px, 500, 28px, 0.7, #404040)
+				.cost
+					@include font('Inter', 64px, 700, 100%, 1, #404040)
+				.forever
+					@include font('Inter', 18px, 500, 28px, 0.4, #404040)
+
+				.start
+					background-color: #FF553E
+					color: white
+					@include font('Popins', 18px, 500, 28px, 1, #FFFFFF)
+
+			.block2
+				background-color: #FF553E
+				color: white
+
+				.title
+					@include font('Inter', 48px, 600, 100%, 1, white)
+				.subtitle
+					@include font('Inter', 28px, 600, 52px, 1, white)
+
+				.dollar
+					vertical-align: top
+					@include font('Inter', 18px, 500, 28px, 0.8, white)
+				.cost
+					@include font('Inter', 64px, 700, 100%, 1, white)
+				.forever
+					@include font('Inter', 18px, 500, 28px, 0.8, white)
+
+				.start
+					background-color: white
+					@include font('Popins', 18px, 500, 28px, 1, #FF553E)
+
+
+
+		.toggle
+			margin: 49px auto auto
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 300px
+			.text
+				@include font('Popins', 24px, 500, 28px, 1, #404040)
+
+		.switch
+			position: relative
+			display: inline-block
+			width: 84px
+			height: 40px
+			margin: 0 20px
+
+		input
+			opacity: 0
+			width: 0
+			height: 0
+
+		.slider
+			position: absolute
+			cursor: pointer
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background-color: rgba(255, 85, 62, 0.2)
+			-webkit-transition: .4s
+			transition: .4s
+
+			&:before
+				position: absolute
+				content: ""
+				height: 28px
+				width: 28px
+				left: 6px
+				bottom: 6px
+				background-color: #FF553E
+				-webkit-transition: .4s
+				transition: .4s
+
+		input
+			//&:checked + .slider
+			//	background-color: rgba(255, 85, 62, 0.2)
+
+			&:focus + .slider
+				box-shadow: 0 0 1px rgba(255, 85, 62, 0.2)
+
+			&:checked + .slider:before
+				transform: translateX(44px)
+
+		.slider.round
+			border-radius: 34px
+
+			&:before
+				border-radius: 50%
+
+.see
+	height: 90vh
+	background-color: #F8FEFE
+	width: 100%
+	padding-top: 248px
+	.content
+		position: relative
+		left: 50%
+		max-width: 525px
+
+		.title
+			@include font('Poppins', 48px, 600, 70px, 1, #18063C)
+
+		.subtitle
+			margin-top: 24px
+			@include font('Inter', 18px, 400, 36px, 0.8, #404040)
+
+		.start
+			margin-top: 46px
+			width: 184px
+			height: 76px
+			border-radius: 40px
+			border: 1px solid #FF553E
+			@include font('Poppins', 18px, 500, 28px, 1, #FF553E)
+
+
+.what
+	height: 90vh
+	background-color: white
+
+	.article
+		margin-top: 107px
+		text-align: center
+		.title
+			@include font('Poppins', 48px, 600, 70px, 1, #18063C)
+		.subtitle
+			margin-top: 20px
+			@include font('Inter', 18px, 400, 46px, 0.8, #404040)
+
+	.gallery
+		display: flex
+		align-items: center
+		gap: 48px
+		margin: auto
+		max-width: 1000px
+
+		.avatar
+			height: 380px
+			width: 300px
+			background-color: #FFF8F2
+			border-radius: 370px
+
+		.message
+			max-width: 652px
+			.text
+				@include font('Inter', 20px, 400, 36px, 0.8, #404040)
+			.author
+				margin-top: 36px
+				@include font('Inter', 24px, 500, 24px, 0.8, #38363C)
+			.job
+				margin-top: 16px
+				@include font('Inter', 18px, 500, 26px, 0.7, #38363C)
+
+			.points
+				display: flex
+				width: 102px
+				height: 12px
+				margin-top: 28px
+				justify-content: space-between
+				.point
+					width: 12px
+					height: 12px
+					border-radius: 50%
+					background-color: rgba(255, 85, 62, 0.2)
+
+.get
+	height: 80vh
+	background-color: #FFF8F2
+
+	.container
+		max-width: 1170px
+		height: 100%
+		display: flex
+		align-items: center
+		margin: auto
+
+	.content
+		max-width: 530px
+
+	.title
+		@include font('Poppins', 48px, 600, 70px, 1, #18063C)
+	.subtitle
+		margin-top: 24px
+		@include font('Inter', 20px, 400, 36px, 0.8, #404040)
+
+	.buttons
+		margin-top: 48px
+		display: flex
+		gap: 20px
+
+	.button
+		height: 75px
+		width: 195px
+		border-radius: 40px
+		border: 1px solid #FF553E
+		display: flex
+		padding: 24px 40px
+
+	.button1
+		background-color: #FF553E
+
+
+footer
+	background-color: white
+
+	.first-line
+		max-width: 1170px
+		margin: 132px auto auto
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	nav
+		display: flex
+		justify-content: space-between
+
+	.menu
+		width: 100%
+		max-width: 420px
+		@include font('Poppins', 18px, 400, 24px, 1, 1C0E0D)
+
+	.socials
+		width: 100%
+		max-width: 190px
+
+	hr
+		margin-top: 60px
+		width: 100%
+		max-width: 1170px
+		opacity: 0.2
+		border: 1px solid #404040
+
+	.second-line
+		width: 100%
+		max-width: 1170px
+		margin: 40px auto 55px
+		display: flex
+		justify-content: space-between
+		@include font('Inter', 18px, 400, 24px, 1, #404040)
+
+
+
+
+
+
