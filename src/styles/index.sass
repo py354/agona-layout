@@ -7,6 +7,12 @@
 	background-color: #FF553E
 	color: white
 
+//embed
+//	position: relative
+//	left: 50%
+//	top: 50%
+//	transform: translateX(-50%) translateY(-50%)
+
 @mixin font($family, $size, $weight, $line-height, $opacity: 1, $color: black)
 	font-family: $family, sans-serif
 	font-size: $size
@@ -171,17 +177,23 @@
 				width: 88px
 				height: 88px
 				border-radius: 24px
-				background: rgba(255, 255, 255, 0.5)
 				box-shadow: 14px 20px 48px rgba(25, 15, 44, 0.06)
 
 		.fun-fact__block1
 			background-color: #70D0DC
+			.rounded_rectangle
+				background: rgba(255, 255, 255, 0.5) url("../assets/icon1.svg") center no-repeat
+
 
 		.fun-fact__block2
 			background-color: #7562E0
+			.rounded_rectangle
+				background: rgba(255, 255, 255, 0.5) url("../assets/icon2.svg") center no-repeat
 
 		.fun-fact__block3
 			background-color: #FA865F
+			.rounded_rectangle
+				background: rgba(255, 255, 255, 0.5) url("../assets/icon3.svg") center no-repeat
 
 
 .analytics
@@ -223,11 +235,11 @@
 				margin: 24px
 
 			.rectangle1
-				background-color: #FA855C
+				background: #FA855C url("../assets/icon4.svg") center no-repeat
 			.rectangle2
-				background-color: #7AD6E1
+				background: #7AD6E1 url("../assets/icon5.svg") center no-repeat
 			.rectangle3
-				background-color: #FFC954
+				background: #FFC954 url("../assets/icon6.svg") center no-repeat
 
 
 .how
@@ -270,11 +282,11 @@
 				margin: 0 1.25vw
 
 			.rectangle1
-				background-color: #5BC17F
+				background: #5BC17F url("../assets/icon7.svg") center no-repeat
 			.rectangle2
-				background-color: #FE6292
+				background: #FE6292 url("../assets/icon8.svg") center no-repeat
 			.rectangle3
-				background-color: #6B72FF
+				background: #6B72FF url("../assets/icon9.svg") center no-repeat
 
 		.indent
 			margin-left: 9vw

@@ -191,7 +191,6 @@
 .fun-fact .fun-fact__blocks .fun-fact__block .rounded_rectangle {
   width: 88px;
   height: 88px;
-  background: #ffffff80;
   border-radius: 24px;
   box-shadow: 14px 20px 48px #190f2c0f;
 }
@@ -200,12 +199,24 @@
   background-color: #70d0dc;
 }
 
+.fun-fact .fun-fact__blocks .fun-fact__block1 .rounded_rectangle {
+  background: #ffffff80 url("icon1.0c1ab36f.svg") center no-repeat;
+}
+
 .fun-fact .fun-fact__blocks .fun-fact__block2 {
   background-color: #7562e0;
 }
 
+.fun-fact .fun-fact__blocks .fun-fact__block2 .rounded_rectangle {
+  background: #ffffff80 url("icon2.dc30b1ea.svg") center no-repeat;
+}
+
 .fun-fact .fun-fact__blocks .fun-fact__block3 {
   background-color: #fa865f;
+}
+
+.fun-fact .fun-fact__blocks .fun-fact__block3 .rounded_rectangle {
+  background: #ffffff80 url("icon3.843d2751.svg") center no-repeat;
 }
 
 .analytics {
@@ -278,15 +289,15 @@
 }
 
 .analytics .content .content__block .rectangle1 {
-  background-color: #fa855c;
+  background: #fa855c url("icon4.e05de03d.svg") center no-repeat;
 }
 
 .analytics .content .content__block .rectangle2 {
-  background-color: #7ad6e1;
+  background: #7ad6e1 url("icon5.bbf39a28.svg") center no-repeat;
 }
 
 .analytics .content .content__block .rectangle3 {
-  background-color: #ffc954;
+  background: #ffc954 url("icon6.96b8b6ed.svg") center no-repeat;
 }
 
 .how {
@@ -358,15 +369,15 @@
 }
 
 .how .content .content__block .rectangle1 {
-  background-color: #5bc17f;
+  background: #5bc17f url("icon7.a01632bb.svg") center no-repeat;
 }
 
 .how .content .content__block .rectangle2 {
-  background-color: #fe6292;
+  background: #fe6292 url("icon8.525bb587.svg") center no-repeat;
 }
 
 .how .content .content__block .rectangle3 {
-  background-color: #6b72ff;
+  background: #6b72ff url("icon9.824bdf2c.svg") center no-repeat;
 }
 
 .how .content .indent {
