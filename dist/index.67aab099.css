@@ -175,7 +175,13 @@
 
 .fun-fact .content p {
   max-width: 660px;
+  opacity: .8;
+  color: #404040;
   margin: 20px auto;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
 }
 
 .fun-fact .fun-fact__blocks {
@@ -954,11 +960,11 @@ footer .second-line {
   .fun-fact {
     height: 260vh;
     background: #fff;
-    padding: 0 16vw;
   }
 
   .fun-fact .expertises {
     flex-direction: column;
+    padding: 0 16vw;
   }
 
   .fun-fact .expertises__item__title {
@@ -976,6 +982,213 @@ footer .second-line {
 
   .fun-fact .expertises__item:not(:last-of-type) {
     border-bottom: 1px solid #1e0c3e33;
+  }
+
+  .fun-fact .content {
+    margin: 6px 24px;
+  }
+
+  .fun-fact .content h1 {
+    opacity: 1;
+    color: #18063c;
+    margin: 0;
+    font-family: Popins, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .fun-fact .content p {
+    max-width: 100%;
+    opacity: .8;
+    color: #404040;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  .fun-fact .fun-fact__blocks {
+    flex-direction: column;
+    gap: 20px;
+    margin: 28px auto auto;
+    padding: 0 16px;
+  }
+
+  .fun-fact .fun-fact__blocks .fun-fact__block {
+    width: 100%;
+  }
+
+  .analytics {
+    height: auto;
+    margin-bottom: 60px;
+  }
+
+  .analytics .content {
+    max-width: 100%;
+    margin: 0 20px;
+    position: static;
+  }
+
+  .analytics .content .title {
+    opacity: 1;
+    color: #18063c;
+    font-family: Popins, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .analytics .content .subtitle {
+    opacity: .8;
+    color: #404040;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .analytics .content .content__block {
+    align-items: start;
+    gap: 18px;
+    margin: 24px 0 0;
+  }
+
+  .analytics .content .content__block .title {
+    opacity: 1;
+    color: #18063c;
+    font-family: Popins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .analytics .content .content__block .subtitle {
+    opacity: .8;
+    color: #404040;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .analytics .content .content__block .rectangle {
+    width: 56px;
+    height: 56px;
+    background-size: 30px;
+    border-radius: 10px;
+    margin: 6px 0 0;
+  }
+
+  .analytics .content .content__block .article {
+    width: calc(100% - 114px);
+  }
+
+  .how {
+    height: auto;
+    padding: 0 0 60px;
+  }
+
+  .how .content {
+    width: 100%;
+    gap: 24px;
+    margin: 0 20px;
+  }
+
+  .how .content .article {
+    width: calc(100% - 114px);
+  }
+
+  .how .content .title {
+    opacity: 1;
+    color: #18063c;
+    margin: 36px 100px 0 24px;
+    font-family: Popins, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .how .content .subtitle {
+    opacity: .8;
+    color: #404040;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    display: none;
+  }
+
+  .how .content .content__block {
+    align-items: start;
+    gap: 18px;
+    margin: 0;
+  }
+
+  .how .content .content__block .title {
+    opacity: 1;
+    color: #18063c;
+    margin: 0;
+    font-family: Popins, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .how .content .content__block .subtitle {
+    opacity: .8;
+    color: #404040;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    display: block;
+  }
+
+  .how .content .content__block .rectangle {
+    width: 56px;
+    height: 56px;
+    background-size: 30px;
+    border-radius: 10px;
+    margin: 6px 0 0;
+  }
+
+  .how .content .indent {
+    margin-left: 0;
+  }
+
+  .pricing {
+    height: auto;
+  }
+
+  .pricing .content {
+    width: calc(100% - 33px);
+    margin: 14vh 13px 14vh 20px;
+    padding: 0;
+  }
+
+  .pricing .content .title {
+    opacity: 1;
+    color: #18063c;
+    margin: 0;
+    font-family: Popins, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+  }
+
+  .pricing .content .subtitle {
+    opacity: .8;
+    color: #404040;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+  .pricing .content .blocks {
+    flex-direction: column;
   }
 }
 

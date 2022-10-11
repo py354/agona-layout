@@ -127,6 +127,7 @@
 		p
 			margin: 20px auto
 			max-width: 660px
+			@include font('Inter', 18px, 400, 36px, 0.8, #404040)
 
 	.fun-fact__blocks
 		width: 100%
@@ -137,7 +138,6 @@
 		gap: 32px
 
 		.fun-fact__block
-			//width: 100%
 			width: 369px
 			border-width: 0
 			border-radius: 48px
@@ -590,9 +590,9 @@ footer
 	.fun-fact
 		height: 260vh
 		background: white
-		padding: 0 16vw
 
 		.expertises
+			padding: 0 16vw
 			flex-direction: column
 
 			&__item__title
@@ -605,3 +605,106 @@ footer
 			border-bottom: 1px solid rgba(30, 12, 62, 0.2)
 
 		.content
+			margin: 6px 24px
+			h1
+				margin: 0
+				@include font('Popins', 24px, 600, 36px, 1.0, #18063C)
+			p
+				margin: 0
+				max-width: 100%
+				@include font('Inter', 16px, 400, 36px, 0.8, #404040)
+
+		.fun-fact__blocks
+			padding: 0 16px
+			flex-direction: column
+			margin: 28px auto auto
+			gap: 20px
+
+			.fun-fact__block
+				width: 100%
+
+	.analytics
+		height: auto
+		margin-bottom: 60px
+		.content
+			position: static
+			margin: 0 20px 0 20px
+			max-width: 100%
+			.title
+				@include font('Popins', 24px, 600, 36px, 1, #18063C)
+			.subtitle
+				@include font('Inter', 16px, 400, 28px, 0.8, #404040)
+
+			.content__block
+				margin: 24px 0 0
+				gap: 18px
+				align-items: start
+
+				.title
+					@include font('Popins', 18px, 600, 36px, 1, #18063C)
+				.subtitle
+					@include font('Inter', 14px, 400, 25px, 0.8, #404040)
+
+				.rectangle
+					width: 56px
+					height: 56px
+					border-radius: 10px
+					margin: 6px 0 0
+					background-size: 30px
+
+				.article
+					width: calc(100% - 40px - 18px - 56px)
+
+	.how
+		height: auto
+		padding: 0 0 60px
+
+		.content
+			width: 100%
+			margin: 0 20px 0 20px
+			gap: 24px
+			.article
+				width: calc(100% - 40px - 18px - 56px)
+			.title
+				margin: 36px 100px 0 24px
+				@include font('Popins', 24px, 600, 36px, 1, #18063C)
+			.subtitle
+				display: none
+				@include font('Inter', 16px, 400, 25px, 0.8, #404040)
+
+			.content__block
+				margin: 0
+				gap: 18px
+				align-items: start
+
+				.title
+					margin: 0
+					@include font('Popins', 18px, 600, 36px, 1, #18063C)
+				.subtitle
+					display: block
+					@include font('Inter', 14px, 400, 25px, 0.8, #404040)
+
+				.rectangle
+					width: 56px
+					height: 56px
+					border-radius: 10px
+					margin: 6px 0 0
+					background-size: 30px
+
+			.indent
+				margin-left: 0
+
+	.pricing
+		height: auto
+		.content
+			margin: 14vh 13px 14vh 20px
+			padding: 0
+			width: calc(100% - 33px)
+			.title
+				margin: 0
+				@include font('Popins', 24px, 600, 36px, 1, #18063C)
+			.subtitle
+				@include font('Inter', 16px, 400, 36px, 0.8, #404040)
+
+			.blocks
+				flex-direction: column
